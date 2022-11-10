@@ -1,0 +1,99 @@
+COMANDOS BÁSICOS GIT
+
+git init
+se utiliza para iniciar el repositorio.
+
+git add ejemplo.js
+crea el archivo pero no lo guarda de forma definitiva lo almacena en (Staging Área). 
+
+git commit -m "version 1"
+aquí se generan cambios de "Staging Área" y con (-m"") se deja un mensaje que sea útil.
+
+git add
+agrega los archivos al repositorio, pero únicamente en la carpeta que te encuentras.
+
+git commit -m "cambios v1"
+sirve para generar cambios en la versión antigua
+
+git status
+sirve para revisar si has modificado o guardado los cambios hechos.
+
+git log "archivo txt"
+sirve para ver el historial del archivo.
+
+git push
+sirve para enviar cambios al repositorio remoto
+
+git pull
+sirve para recibir cambios del repositorio remoto.
+
+COMANDOS PARA MOVER ARCHIVOS ENTRE LOS ESTADOS DE GIT
+
+git status
+Nos permite ver el estado de todos nuestros archivos y carpetas
+
+git add
+Nos ayuda a mover archivos del Untracked o Unstaged al estado Staged.
+Podemos usar (git nombre del archivo o carpeta) para añadir archivos y carpetas individuales o (git add -a) para mover todos los archivos de nuestro proyecto ( tanto Untracked como Unstaged)
+
+git reset HEAD
+Nos ayuda a sacar los archivos del estado Staged para devolverlos a su estado anterior. Si los archivos venían de Unstaged, vuelve allí. Y lo mismo si venían de Untracked.
+
+git commit
+Nos ayuda a mover archivos de Unstaged a Tracked. Esta es una ocasión especial, los archivos han sido guardados o actualizados en el repositorio. Git nos pedirá que dejemos un mensaje para recordar los cambios que hicimos y podemos usar el argumento (-m) para describirlo (git commit -m "mensaje").
+
+git rm
+Este comando necesita alguno de los argumentos para poder ejecutarse correctamente:
+git rm --cached
+Mueve los archivos que le indiquemos al estado Untracked.
+git rm force
+Elimina los archivos de Git y del disco duro. Git guarda el registro de la existencia de los archivos, por lo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).
+
+ANALIZAR CAMBIOS EN LOS ARCHIVOS DE TU PROYECTO
+
+git log
+Muestra la identificación de los commits.
+
+git show
+Nos muestra los cambios que han existido sobre un archivo y es muy útil para detectar cuando se produjeron ciertos cambios, que se rompió y como lo podemos solucionar. Pero podemos ser más detallados.
+
+git diff
+Nos muestra la diferencia entre una versión y otra, no necesariamente todos los cambios desde la creación. (Gif diff commitA commitB)
+
+RESET Y CHECKOUT
+
+git checkout + Id del commit
+Podemos volver a cualquier versión anterior de un archivo específico o incluso de nuestro proyecto entero. Esta es también es la forma de movernos entre ramas.
+
+git log --start
+commit descriptivo con cantidad de líneas agregadas y removidas por archivo.
+
+git reset --soft 'commit'
+Mantiene los archivos en el área de Staging para que podamos aplicar nuestros últimos cambios desde la commit anterior.
+
+git reset -- hard 'commit'
+Borra toda la información que tengamos en el área de Staging (perdiendo todo para siempre).
+
+git checkout master 'archivo.txt'
+Volvemos a la versión madre.
+
+RAMAS O BRANCHES
+
+git branch rama, git checkout -b rama
+Crea nueva rama o se mueve en el tiempo a cualquier otro commit con los comandos
+(git reset id-commit, git checkout rama-o-id-commit).
+
+git branch
+Crea una rama.
+git checkout
+Cambiarse de rama.
+
+git merge "cualquier otra rama"
+Nos permite crear un nuevo commit con la combinación de dos ramas, la rama donde nos encontramos cuando ejecutamos el comando y la rama que le pasamos después del comando.
+
+NOTA: hacer commit antes de cambiar de rama para no perder los datos.
+
+
+AGREGAR USUARIO DE GITHUB
+git config --global user.name
+git config --global user.email

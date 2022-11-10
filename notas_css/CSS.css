@@ -1,0 +1,293 @@
+/*CSS= Cascading Style Sheets, hojas de estilo en cascada.*/
+
+/*tres opciones para CSS
+1. estilos en linea
+2. <Style></Style>
+3. archivo .css*/
+
+/*ESTILOS EN LINEA
+el estilo se añade directamente a la etiqueta de apertura 
+del elemento html.*/
+<h2 style="color blue">lo que sea</h2>
+
+/*ELEMENTO <style>
+añadimos elemento <style> en <head> para describir el estilo.*/
+<head>
+ <style>
+  h2 {
+     color blue;
+  }
+ </style>
+</head>
+
+/*ARCHIVO CSS (recomendada)
+creamos de tipo .css para definir el estilo de la pagina.*/
+
+/*SELECTORES DE CLASES
+class="lo-que-quieras-poner"
+se coloca asi en el html donde quieras poner la clase.*/
+
+.lo-que-quieras-poner {
+  color: orange;
+}
+/*asi se escribe el contenido de la clase en .css*/
+
+/*TAMAÑO DE FUENTE*/
+font-size 30px; /*cambia el tamaño de la letra.*/
+li {
+  color: blue;
+font-size: 30px;
+} /*se pueden escribir una regla com mas de
+una propiedad.*/
+
+/*TAMAÑO DE IMAGENES*/
+img {
+  width: 200px; /*ancho de la imagen*/
+}
+/*ejemplo con una clase*/
+.nomdre-de-la-clase {
+  width: 200px;
+}
+
+/*AGREGAR BRODES A OBJETOS*/
+.clase {
+  border-width: 5px;
+  border-color: blue;
+  border-style: solid;
+                none
+                double
+                groove
+                inset
+                outset
+                etc.
+}               /*se pueden poner varios valores de vordes a valez*/
+/*bordes redondeados*/
+.brodes-redondeados {
+  border-radius: 20px;
+}
+
+/*IMAGENES REDONDEADAS*/
+.imagenes-redondeadas {
+  border-radius: 50%;
+}
+
+/*FAMILIAS TOPOGRÁFICAS*/
+h2 {
+  font-family: Verdana;
+}
+
+/*Google Fonts.
+fonts.google.com encontraremos fuentes
+suministradas por google.*/
+
+/*FUENTE DE RESPALDO*/
+H1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* el sans-serif vendria siendo el tpo de fuente de respaldo, puedes usar varias fuentes de reslpaldo despues de una coma
+y un espacio.*/
+
+/*NAVEGACIÓN CON TABS*/
+.menu {
+  display: flex;
+}
+
+.menu {
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+/*ETIQUETA PARA ENLAZAR EL CSS CON EL HTML*/
+<link href="style.css"> rel="stylesheet"
+
+ /*SELECTORES CSS 
+ conjuntos de elimentos sobre el cual se alicaran un 
+ conjunto de reglas css*/  
+ /*SELECTOR UNIVERSAL*/
+ * {
+  color: blue;
+ }
+
+ /*COLOR DE FONDO EN UN <DIV>*/
+ div {
+   background-color: blue;
+ }
+
+ .contenedor {
+   background-color: aqua;
+ }
+
+ /*ATRIBUTOS ID RN CSS*/
+ #nombre-de-id {
+   font-size: 30px;
+   color: orange;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ #imagen-id {
+   border-radius: 50%;
+   border-width: 5px;
+   border-style: solid;
+   border-color: orange;
+ }
+
+ /*PADDING*/
+ img {
+   padding: 200px; /* el padding es la distancia entre el contenido y el borde de un objeto*/
+ }
+/*padding a cada lado*/
+img {
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+img {
+  padding: 10px 15px 10px 15px; /*padding en una sola linea*/
+}
+
+/*MARGEN*/
+img {
+  margin: 15px; /*ponerle margenes a los objetos*/
+}
+
+img {
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+img {
+  margin: 10px 15px 10px 15px; /*margin en una sola linea*/
+}
+
+/*PADDING VS MARIG*/
+/*padding s la distancia que hay entre el contenido y el borde
+el margen es la distancia que hay entre el elemento con otros elemntos*/
+
+/*selectores de atributos*/
+/*los elementos pueden tener atributos que proporcionan un nivel de detalle
+mayor sobre el elemento que delinean, en el CSS puedes utilizar selectores
+de atributo para seleccionar elementos definitdos con unos atributos determindados*/
+
+img [alt] {
+  border-radius: 50%;
+}
+
+[type="radio"] {
+  margin: 5px;
+}
+
+input[type="radio"] {
+  margin: 5px;
+}
+
+a[href="www.paginaweb.com"] {
+  color: aquamarine;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*UNIDADES RELATIVA Y UNIDADES ABSOLUTAS*/
+/*unidades absolutas
+cm = centimetros
+mm = milimetros
+Q = cuartos de milimetro
+in = pulgadas
+pc = picas
+pt = puntos
+px = pixeles
+
+unidades relativas
+em = tamaño de letra del elemento padre
+ex = altura x de la fuente de elemento
+ch = la medida de avance (ancho)
+rem = tamaño de la letra del elemento raiz
+lh = alturra de la linea del elemento
+vw = 1% de ancho de la ventana grafica
+vh = 1% de altura de la ventana gra
+vmin = 1% de la dimension mas pequeña de la ventana grafica
+vmax = 1% de la dimension mas grande de la ventana  grafica */
+
+#contenedor-principal {
+  color: azure;
+  padding: 5px;
+  font-size: 10px;
+  background-color: yellow;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.rectangulos {
+  padding: 5px;
+  margin: 5px;
+}
+
+.px {
+  background-color: red;
+  width: 200px;
+}
+
+.vw {
+  background-color: darkmagenta;
+  width: 20vw;
+}
+
+.em {
+  background-color: brown;
+  width: 15em;
+  font-size: 1.5em;
+}
+
+/* APLICAR ESTILOS A <body>*/
+body {
+  background-color:black;
+}
+
+/*PRIORIZA UN ESTILO SOBRE OTRO*/
+/* la ultima clase que se encuentre en el archivo css es la que tendra prioridad*/
+.texto-azul {
+  color: blue;
+}
+
+.texto-morado {
+  color: purple;
+}
+/*si una liena en html tiene estados dos clases por ejemplo entonces la prioridad la tendra
+el segundo estilo, es decir el texto sera el morado porque es la ultima clase escrita*/
+a {
+  text-decoration: purple wavy underline;
+}
+
+.sin-subrayado {
+  text-decoration: none;
+}
+/*en este segundo ejemplo tambien la segunda clase es la que tiene la prioridad
+sin alterar su orden ya que la clase tendra prioridad sobre un selector de tipo generico*/
+
+/*PRIORIDAD DE class VS id*/
+#titulo {
+  color: purple;
+}
+
+.texto-azul {
+  color: blue;
+}
+/*el id tiene prioridad sobre la clase y los selectores de tipo*/
+
+/* PRIORIDAD DE LOS ESTILOS EN LINEA*/
+/*el estilo en linea se va a priorisar por ecima de todo*/
+.texto-azul {
+  color: blue !important;
+}
+/*de esta manera podemos decirle al navegador que le de prioridad a esa linea de css.*/
+
+/* CODIGOS EXADECIMALES PARA COLORES*/
+#000000 /*ejemplo codigo exadecimal*/
+div {
+  background-color: #000000;
+}
+/*color picker para encontrar los codigos de colores*/
+
+
