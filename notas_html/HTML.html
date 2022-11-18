@@ -43,6 +43,14 @@
         <a href="#"><img src " " alt="descripcion de la imagen."></a>
         <!-- asi estariamos creando enlaces muerto, solo seria pata ver como se veria un atributo como enlace -->
 
+        <!--El elemento figure representa contenido independiente y te permitirá asociar una imagen a una descripción.-->
+        <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+                alt="A slice of lasagna on a plate.">
+            <figcaption>Cats <em>love</em> lasagna.</figcaption>
+            <!--Un elemento (figcaption), se utiliza para añadir una descripción o leyenda para describir una imagen anidada en un elemento figure. -->
+        </figure>
+
         <!--de esta manera insertamos un video en html-->
         <div>
             <video poster="ruta de la imagen para el video" controls autoplay muted>
@@ -76,6 +84,9 @@
             <label for="algo"><input id="algo" type="radio" name="algo-algo mas" /> algo
             </label>
 
+            <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+            <!--Para evitar que un usuario entregue su formulario incompleto, necesitas añadir el atributo required al elemento input. El atributo required no necesita ningún valor. Simplemente necesitas añadir la palabra required al elemento input-->
+
             <br />
             <!-- sirve para separar los elemntos en la web  se agrega al final del elemento que quieres separar-->
 
@@ -105,6 +116,10 @@
             <button type="submit">enviar</button>
         </form>
         <!-- etiquetas para crear un formulario -->
+
+        <!--El elemento fieldset se utiliza para agrupar elementos input y label relacionados dentro de un formulario web. Los elementos fieldset son elementos de nivel de bloque, lo que significa que aparecen en una nueva línea.-->
+        <fieldset></fieldset>
+
     </main>
     <!-- etiqueta de cierre de main -->
 
