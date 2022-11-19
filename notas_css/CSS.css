@@ -8,7 +8,7 @@
 /*ESTILOS EN LINEA
 el estilo se añade directamente a la etiqueta de apertura 
 del elemento html.*/
-<h2 style="color blue">lo que sea</h2>
+<h2 style="color blue"> lo que sea</h2>
 
 /*ELEMENTO <style>
 añadimos elemento <style> en <head> para describir el estilo.*/
@@ -34,6 +34,7 @@ se coloca asi en el html donde quieras poner la clase.*/
 
 /*TAMAÑO DE FUENTE*/
 font-size 30px; /*cambia el tamaño de la letra.*/
+
 li {
   color: blue;
 font-size: 30px;
