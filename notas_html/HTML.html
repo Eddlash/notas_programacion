@@ -1,138 +1,169 @@
 <!DOCTYPE html>
 <!-- siempre se inicia con esto -->
 <html lang="es">
-<!-- es el elemento raiz, aqui tambien ponemos el idima que tendra la pagoma web -->
+  <!-- es el elemento raiz, aqui tambien ponemos el idima que tendra la pagoma web -->
 
-<head>
+  <head>
     <!-- en esta etiqueta se colocan todos los enlaces o archivos externos de la pagina web, como archivos "CSS" o "JAVA SCRIPT" y tambien personalizar el titulo de la pagina, tambien elemenos que no vemos pero que hacem un correcto funcionamiento de nuestra página web -->
     <title>titulo de la página</title>
     <link href="el archivo" rel="stylesheet" />
     <!-- para enlasar otros archivos ejemplo .css -->
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- aqui estara la estructura que contendra nuestra pagina -->
     <h1>Pagina De Gatitos</h1>
     <!-- la tiqueta "<h>" sirve para encabezados -->
     <main>
-        <!-- le dice al navegador donde esta el contenido principal de la pagina web -->
-        <h2>dale click para ver las imagemes</h2>
-        <!-- segundo encabezado, pueden ser hasta seis encabezados -->
-        <a href="pagina a la que rediriges" target="_blank" rel="noopener noreferrer">enlace a otra pagina</a>
-        <!-- asi podras poner un enlace, por separado, o dentro de un parrafo -->
-        <!-- TODO:agregar enlaces para las imagenes -->
-        <!-- asi podemos poner recordatorios y no se veram reflejados en la pagina web -->
-        <p>En esta pagina podran encuntrar muchas imagenes de gatitos</p>
-        <!--- asi podemos crear parrafos en nuestra pagina -->
+      <!-- le dice al navegador donde esta el contenido principal de la pagina web -->
+      <h2>dale click para ver las imagemes</h2>
+      <!-- segundo encabezado, pueden ser hasta seis encabezados -->
+      <a
+        href="pagina a la que rediriges"
+        target="_blank"
+        rel="noopener noreferrer"
+        >enlace a otra pagina</a
+      >
+      <!-- asi podras poner un enlace, por separado, o dentro de un parrafo -->
+      <!-- TODO:agregar enlaces para las imagenes -->
+      <!-- asi podemos poner recordatorios y no se veram reflejados en la pagina web -->
+      <p>En esta pagina podran encuntrar muchas imagenes de gatitos</p>
+      <!--- asi podemos crear parrafos en nuestra pagina -->
 
-        <strong>texto en negrita</strong>
-        <em>texto en cursiva</em>
-        <s>texto tachado</s>
+      <strong>texto en negrita</strong>
+      <em>texto en cursiva</em>
+      <s>texto tachado</s>
 
-        <a href="enlace 1">enlace interno</a>
-        <a href="enlace 2">enlace interno 2</a>
-        <a href="enlace 3">enlace interno 3</a>
-        <!-- de esta manera creamos enlaces que nos llevem a secciones especificas de nuestra pagina web -->
-        <h3 id="para enlace interno">ejemplo parrafo</h3>
-        <!-- asi idemtificamos el parrafo al cual queremos dirigirnos en el enlace interno -->
+      <a href="enlace 1">enlace interno</a>
+      <a href="enlace 2">enlace interno 2</a>
+      <a href="enlace 3">enlace interno 3</a>
+      <!-- de esta manera creamos enlaces que nos llevem a secciones especificas de nuestra pagina web -->
+      <h3 id="para enlace interno">ejemplo parrafo</h3>
+      <!-- asi idemtificamos el parrafo al cual queremos dirigirnos en el enlace interno -->
 
-        <img src " " alt="descripcion de la imagen.">
-        <!-- etiqueta de imagen  en las comillas va donde esta alojada la imagen -->
-        <a href="ruta a dirigirse"><img src " " alt="descripcion de la imagen."></a>
-        <!-- de esta manera podemos usar una imagen como enlace -->
-        <a href="#"><img src " " alt="descripcion de la imagen."></a>
-        <!-- asi estariamos creando enlaces muerto, solo seria pata ver como se veria un atributo como enlace -->
+      <img src " " alt="descripcion de la imagen.">
+      <!-- etiqueta de imagen  en las comillas va donde esta alojada la imagen -->
+      <a href="ruta a dirigirse"
+        ><img src " " alt="descripcion de la imagen."></a
+      >
+      <!-- de esta manera podemos usar una imagen como enlace -->
+      <a href="#"><img src " " alt="descripcion de la imagen."></a>
+      <!-- asi estariamos creando enlaces muerto, solo seria pata ver como se veria un atributo como enlace -->
 
-        <!--El elemento figure representa contenido independiente y te permitirá asociar una imagen a una descripción.-->
-        <figure>
-            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
-                alt="A slice of lasagna on a plate.">
-            <figcaption>Cats <em>love</em> lasagna.</figcaption>
-            <!--Un elemento (figcaption), se utiliza para añadir una descripción o leyenda para describir una imagen anidada en un elemento figure. -->
-        </figure>
+      <!--El elemento figure representa contenido independiente y te permitirá asociar una imagen a una descripción.-->
+      <figure>
+        <img
+          src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+          alt="A slice of lasagna on a plate."
+        />
+        <figcaption>Cats <em>love</em> lasagna.</figcaption>
+        <!--Un elemento (figcaption), se utiliza para añadir una descripción o leyenda para describir una imagen anidada en un elemento figure. -->
+      </figure>
 
-        <!--de esta manera insertamos un video en html-->
-        <div>
-            <video poster="ruta de la imagen para el video" controls autoplay muted>
-                <source src="ruta del video y formato" type="tipo de video/mp4" />
-                su navegador no puede reproducir este formato de video.
-            </video>
+      <!--de esta manera insertamos un video en html-->
+      <div>
+        <video poster="ruta de la imagen para el video" controls autoplay muted>
+          <source src="ruta del video y formato" type="tipo de video/mp4" />
+          su navegador no puede reproducir este formato de video.
+        </video>
+      </div>
+
+      <video src="ruta del video/mp4"></video>
+      <!--manera mas sencilla de insertar el video-->
+
+      <!-- elemento "<div>" -->
+
+      <div></div>
+      <!-- contenedor para usar para cualquir propósito -->
+
+      <ul>
+        <!-- etiqueta para hacer listas no ordenadas, se le colocara una viñeta antes de la primera letra.
+           para que sean ordenadas se utiliza la etiqueta "<ol> -->
+        <li>cualquier cosa</li>
+        <li>cualquier cosa</li>
+        <li>cualquier cosa</li>
+        <li>cualquier cosa</li>
+        <!-- etiqueta para escribir listas -->
+      </ul>
+
+      <hr />
+      <!-- crea liena orizontal en la pagina, se puede usar para separar parrafos -->
+
+      <form action="enviar-respuesta">
+        <label for="algo"
+          ><input id="algo" type="radio" name="algo-algo mas" /> algo
+        </label>
+
+        <input
+          type="text"
+          name="catphotourl"
+          placeholder="cat photo URL"
+          required
+        />
+        <!--Para evitar que un usuario entregue su formulario incompleto, necesitas añadir el atributo required al elemento input. El atributo required no necesita ningún valor. Simplemente necesitas añadir la palabra required al elemento input-->
+
+        <br />
+        <!-- sirve para separar los elemntos en la web  se agrega al final del elemento que quieres separar-->
+
+        <label for="algo mas"
+          ><input id="algo mas" type="radio" name="algo-algo mas" />algo mas
+        </label>
+        <!-- botones de radio para seleccionar -->
+
+        <!-- casillas de verificación -->
+        <label form="algo"
+          ><input id="algo" type="checkbox" name="algo" />algo
+        </label>
+
+        <!-- Navegación com TABS -->
+        <div class="menu">
+          <p>algo</p>
+          <p>algo-mas</p>
+          <p>otra cosa</p>
         </div>
 
-        <video src="ruta del video/mp4"></video>
-        <!--manera mas sencilla de insertar el video-->
+        <!-- atributo "checked"-->
+        <label form="algo"
+          ><input id="algo" type="checkbox" name="algo" checked />algo</label
+        >
 
-        <!-- elemento "<div>" -->
+        <!-- atributo "value" -->
+        <label form="algo"
+          ><input
+            id="algo"
+            type="checkbox"
+            value="algo"
+            name="algo"
+            checked
+          />algo
+        </label>
 
-        <div></div>
-        <!-- contenedor para usar para cualquir propósito -->
+        <input
+          type="text"
+          placeholder="lo que el usuario debe9 escribir"
+          required
+        />
+        <button type="submit">enviar</button>
+      </form>
+      <!-- etiquetas para crear un formulario -->
 
-        <ul>
-            <!-- etiqueta para hacer listas no ordenadas, se le colocara una viñeta antes de la primera letra.
-           para que sean ordenadas se utiliza la etiqueta "<ol> -->
-            <li>cualquier cosa</li>
-            <li>cualquier cosa</li>
-            <li>cualquier cosa</li>
-            <li>cualquier cosa</li>
-            <!-- etiqueta para escribir listas -->
-        </ul>
+      <!--El elemento fieldset se utiliza para agrupar elementos input y label relacionados dentro de un formulario web. Los elementos fieldset son elementos de nivel de bloque, lo que significa que aparecen en una nueva línea.-->
+      <fieldset></fieldset>
 
-        <hr />
-        <!-- crea liena orizontal en la pagina, se puede usar para separar parrafos -->
-
-        <form action="enviar-respuesta">
-            <label for="algo"><input id="algo" type="radio" name="algo-algo mas" /> algo
-            </label>
-
-            <input type="text" name="catphotourl" placeholder="cat photo URL" required>
-            <!--Para evitar que un usuario entregue su formulario incompleto, necesitas añadir el atributo required al elemento input. El atributo required no necesita ningún valor. Simplemente necesitas añadir la palabra required al elemento input-->
-
-            <br />
-            <!-- sirve para separar los elemntos en la web  se agrega al final del elemento que quieres separar-->
-
-            <label for="algo mas"><input id="algo mas" type="radio" name="algo-algo mas" />algo mas
-            </label>
-            <!-- botones de radio para seleccionar -->
-
-            <!-- casillas de verificación -->
-            <label form="algo"><input id="algo" type="checkbox" name="algo" />algo
-            </label>
-
-            <!-- Navegación com TABS -->
-            <div class="menu">
-                <p>algo</p>
-                <p>algo-mas</p>
-                <p>otra cosa</p>
-            </div>
-
-            <!-- atributo "checked"-->
-            <label form="algo"><input id="algo" type="checkbox" name="algo" checked />algo</label>
-
-            <!-- atributo "value" -->
-            <label form="algo"><input id="algo" type="checkbox" value="algo" name="algo" checked />algo
-            </label>
-
-            <input type="text" placeholder="lo que el usuario debe9 escribir" required />
-            <button type="submit">enviar</button>
-        </form>
-        <!-- etiquetas para crear un formulario -->
-
-        <!--El elemento fieldset se utiliza para agrupar elementos input y label relacionados dentro de un formulario web. Los elementos fieldset son elementos de nivel de bloque, lo que significa que aparecen en una nueva línea.-->
-        <fieldset></fieldset>
-
+      <!--El elemento legend actúa como una leyenda/descripción, para el contenido del elemento fieldset. Le da a los usuarios un contexto sobre lo que deben ingresar en esa parte del formulario.-->
+      <legend>Is your cat an indoor or outdoor cat?</legend>
     </main>
     <!-- etiqueta de cierre de main -->
 
     <!-- pie de pagina -->
     <footer>
-        <p>lo que quieras escrivir en el pie de pagina</p>
+      <p>lo que quieras escrivir en el pie de pagina</p>
     </footer>
 
     <!-- etiqueta "smmal" -->
     <small></small>
     <!-- para poner el texto mas pequeño -->
-</body>
-<!-- etiqueta de cierre de body -->
-
+  </body>
+  <!-- etiqueta de cierre de body -->
 </html>
 <!-- etiqueta de cierre del elemento raiz -->
