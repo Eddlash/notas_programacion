@@ -8,18 +8,15 @@
 /*ESTILOS EN LINEA
 el estilo se añade directamente a la etiqueta de apertura 
 del elemento html.*/
-<h2 style="color blue"> lo que sea</h2>
+<h2 style="color blue">lo que sea</h2>
 
 /*ELEMENTO <style>
 añadimos elemento <style> en <head> para describir el estilo.*/
-<head>
- <style>
-  h2 {
-     color blue;
-  }
- </style>
-</head>
+<head><style>h2 {
+  color blue;
+}
 
+</style></head>
 /*ARCHIVO CSS (recomendada)
 creamos de tipo .css para definir el estilo de la pagina.*/
 
@@ -30,21 +27,27 @@ se coloca asi en el html donde quieras poner la clase.*/
 .lo-que-quieras-poner {
   color: orange;
 }
+
 /*asi se escribe el contenido de la clase en .css*/
 
 /*TAMAÑO DE FUENTE*/
-font-size 30px; /*cambia el tamaño de la letra.*/
+font-size 30px;
+/*cambia el tamaño de la letra.*/
 
 li {
   color: blue;
-font-size: 30px;
-} /*se pueden escribir una regla com mas de
+  font-size: 30px;
+}
+
+/*se pueden escribir una regla com mas de
 una propiedad.*/
 
 /*TAMAÑO DE IMAGENES*/
 img {
-  width: 200px; /*ancho de la imagen*/
+  width: 200px;
+  /*ancho de la imagen*/
 }
+
 /*ejemplo con una clase*/
 .nomdre-de-la-clase {
   width: 200px;
@@ -55,13 +58,10 @@ img {
   border-width: 5px;
   border-color: blue;
   border-style: solid;
-                none
-                double
-                groove
-                inset
-                outset
-                etc.
-}               /*se pueden poner varios valores de vordes a valez*/
+  none double groove inset outset etc.
+}
+
+/*se pueden poner varios valores de vordes a valez*/
 /*bordes redondeados*/
 .brodes-redondeados {
   border-radius: 20px;
@@ -85,6 +85,7 @@ suministradas por google.*/
 H1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 /* el sans-serif vendria siendo el tpo de fuente de respaldo, puedes usar varias fuentes de reslpaldo despues de una coma
 y un espacio.*/
 
@@ -99,43 +100,45 @@ y un espacio.*/
 }
 
 /*ETIQUETA PARA ENLAZAR EL CSS CON EL HTML*/
-<link href="style.css"> rel="stylesheet"
+<link href="style.css">rel="stylesheet"
 
- /*SELECTORES CSS 
+/*SELECTORES CSS 
  conjuntos de elimentos sobre el cual se alicaran un 
- conjunto de reglas css*/  
- /*SELECTOR UNIVERSAL*/
- * {
+ conjunto de reglas css*/
+/*SELECTOR UNIVERSAL*/
+* {
   color: blue;
- }
+}
 
- /*COLOR DE FONDO EN UN <DIV>*/
- div {
-   background-color: blue;
- }
+/*COLOR DE FONDO EN UN <DIV>*/
+div {
+  background-color: blue;
+}
 
- .contenedor {
-   background-color: aqua;
- }
+.contenedor {
+  background-color: aqua;
+}
 
- /*ATRIBUTOS ID RN CSS*/
- #nombre-de-id {
-   font-size: 30px;
-   color: orange;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- }
+/*ATRIBUTOS ID RN CSS*/
+#nombre-de-id {
+  font-size: 30px;
+  color: orange;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
- #imagen-id {
-   border-radius: 50%;
-   border-width: 5px;
-   border-style: solid;
-   border-color: orange;
- }
+#imagen-id {
+  border-radius: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: orange;
+}
 
- /*PADDING*/
- img {
-   padding: 200px; /* el padding es la distancia entre el contenido y el borde de un objeto*/
- }
+/*PADDING*/
+img {
+  padding: 200px;
+  /* el padding es la distancia entre el contenido y el borde de un objeto*/
+}
+
 /*padding a cada lado*/
 img {
   padding-top: 10px;
@@ -145,12 +148,14 @@ img {
 }
 
 img {
-  padding: 10px 15px 10px 15px; /*padding en una sola linea*/
+  padding: 10px 15px 10px 15px;
+  /*padding en una sola linea*/
 }
 
 /*MARGEN*/
 img {
-  margin: 15px; /*ponerle margenes a los objetos*/
+  margin: 15px;
+  /*ponerle margenes a los objetos*/
 }
 
 img {
@@ -161,7 +166,8 @@ img {
 }
 
 img {
-  margin: 10px 15px 10px 15px; /*margin en una sola linea*/
+  margin: 10px 15px 10px 15px;
+  /*margin en una sola linea*/
 }
 
 /*PADDING VS MARIG*/
@@ -243,7 +249,7 @@ vmax = 1% de la dimension mas grande de la ventana  grafica */
 
 /* APLICAR ESTILOS A <body>*/
 body {
-  background-color:black;
+  background-color: black;
 }
 
 /*PRIORIZA UN ESTILO SOBRE OTRO*/
@@ -255,6 +261,7 @@ body {
 .texto-morado {
   color: purple;
 }
+
 /*si una liena en html tiene estados dos clases por ejemplo entonces la prioridad la tendra
 el segundo estilo, es decir el texto sera el morado porque es la ultima clase escrita*/
 a {
@@ -264,6 +271,7 @@ a {
 .sin-subrayado {
   text-decoration: none;
 }
+
 /*en este segundo ejemplo tambien la segunda clase es la que tiene la prioridad
 sin alterar su orden ya que la clase tendra prioridad sobre un selector de tipo generico*/
 
@@ -275,6 +283,7 @@ sin alterar su orden ya que la clase tendra prioridad sobre un selector de tipo 
 .texto-azul {
   color: blue;
 }
+
 /*el id tiene prioridad sobre la clase y los selectores de tipo*/
 
 /* PRIORIDAD DE LOS ESTILOS EN LINEA*/
@@ -282,13 +291,15 @@ sin alterar su orden ya que la clase tendra prioridad sobre un selector de tipo 
 .texto-azul {
   color: blue !important;
 }
+
 /*de esta manera podemos decirle al navegador que le de prioridad a esa linea de css.*/
 
 /* CODIGOS EXADECIMALES PARA COLORES*/
-#000000 /*ejemplo codigo exadecimal*/
+#000000
+
+/*ejemplo codigo exadecimal*/
 div {
   background-color: #000000;
 }
+
 /*color picker para encontrar los codigos de colores*/
-
-
