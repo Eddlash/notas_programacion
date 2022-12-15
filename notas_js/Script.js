@@ -75,9 +75,9 @@ var miNumeroDecimal = 24.4; //el punto nos indica que se encuentra un numero dec
 var peso = 78.34;
 //MULTIPLICAR NÚMEROS DECIMALES
 var producto = 3.4 * 10.4; //se pueden multiplicar numeros decimales y el resultado sera un número decimal
-producto = 2.4 * 4;
-producto = 6 * 8.9;
-producto = 3.6 * 0;
+producto = 2.4 * 4; 
+producto = 6 * 8.9; 
+producto = 3.6 * 0; 
 producto = -5.7 * 3.4; // se puede multiplicar un numero decimal con un numero entero
 //DIVIDIR NUMEROS DECIMALES
 var cociente = 5.0 / 2.0;
@@ -92,6 +92,130 @@ librosComprados = librosComprados + 1;
 // Opción 2
 librosComprados++; // solo incrementa el valor de uno wn uno 
 //REDUCIR EL VALOR DE UNA VARIABLE
+var numeroDeEstudiantes = 256;
+numeroDeEstudiantes = numeroDeEstudiantes - 1;
+
+numeroDeEstudiantes--;
+
+//ASIGNACIÓN DE SUMA
+var a = 23;
+a += 5; //podemos sumar cualquier cantidad con esta sintaxis.
+
+var totalVentas = 17567.34;
+totalVentas += 345.67;
+
+//ASIGNACIÓN DE RESTA
+var b = 23;
+b -= 3; //podemos restar cualquir cantidad con esta sintaxis
+
+var totalDeuda = 2446;
+totalDeuda -= 345;
+
+//ASIGNACIÓN DE MULTIPLICACIÓN
+var c = 23;
+c *= 2; //podemos multiplicar cualquir cantidad con esta sintaxis
+
+var salario = 45000;
+salario *= 5;
+
+//ASIGNACIÓN DE DIVISIÓN
+var d = 39;
+d /= 3; //podemos dividir cualquier valor con esta sintaxis
+
+var salario = 45000;
+salario /= 2; 
+
+//VARIABLES CON CADENA DE CARÁCTERES
+var nombre = "Alan" //la cadena de caracteres se rodean con comillas dobles o simples 
+var apellido = "Turing"
+
+//ESCAPAR COMILLAS EN CADENA DE CARÁCTERES
+var cadena = "soy una cadena de carácteres "con comillas""; //se nos presenta un error porque intentemos incluir comillas dentro de una cadena de carácteres 
+var cadena = "soy una cadena de carácteres \"con comillas\""; //si ponemos una barra invertira antes de las comillas si podemos añadirlas dentro de la cadena de carácteres 
+
+//CADENA DE CARÁCTERES CON COMILLAS SIMPLES
+var miMeta; 
+miMeta = 'aprender a "programar"'; //se pueden poner las comillas dovles denteo de la cadena de caracteres cuando esta se hace con comillas simples o viceversa 
+miMeta = "aprender a 'programar'";
+
+/*SECUENCIA DE ESCAPE
+combinación de caracteres que no se representan a si mismos en una cadena de caracteres, asi como lo hicimos con las comillas simples y dobles anteriormente.
+
+código | resultado
+-------------------
+\'       comilla simple
+\"       comillas dobles
+\\       barra invertida
+\n       linea nueva
+\r       retorno de carro
+\t       tabulación
+\b       retroceso
+\f       salto de pagina
+...
+*/
+//EJEMPLOS 
+console.log("estoy aprendiendo \"javascript\"");
+
+console.log("estoy aprendiendo \\javascript\\");
+
+console.log("estoy aprendiendo \njavascript\n");
+
+//CONCATENAR CADENA DE CARACTERES
+var nombreCompleto = "Alan " + "Turing"; //podemos concatener cademas de caracteres usando el símbolo "+"
+
+//CONSTRUIR CADENAS COM VARIABLES 
+var verbo = "programar";
+var mensaje = "estoy aprendiendo a " + verbo; //asi podemos juntar una cadena de caracteres con variables 
+
+//AGREGAR VARIABLES A CADENA DE CARÁCTERES
+var mensajeCompleto = "estoy aprendiendo a programar ";
+var parteFinal ="de autodidacta";
+mensajeCompleto += parteFinal; //asi podemos concatenar una cadena de caracteres que esten en diferentes variables.
+
+//LONGITUD DE UNA CADENA DE CARACTERES
+var miCadena;
+miCadena = "JavaScript";
+console.log(miCadena.lenght); //si colocamos ".lenght" al lado del nombre de la variable nos dirá la cantidad de caracteres que tiene esa cadena en específico.
+
+//NOTACIÓN DE CORCHETES: primer carácter.
+var lenguajeDeProgramacion = "JavaScript";
+
+/*
+Cadena:   J a v a S c r i p t
+Índices:  0 1 2 3 4 5 6 7 8 9
+*/
+
+
+//cada cadena de caracteres tiene un indice asociado, que comienza en cero y se incremeta en ino por cada carácter hacia la derecha.
+console.log(lenguajeDeProgramacion[0])
+
+//INMUTABILIDAD DE CADENA DE CARACTERES
+//son cadenas de caracteres que no se pueden cambiar.
+var miCadena = "jola, mundo";
+console.log(miCadena);
+miCadena[0] = "H"; //Error
+miCadena = "hola, mundo"; //manera correcta
+//si quieres corregir un error debes cambiar toda la cadena de caracteres.
+
+//NOTACIÓN DE CORCHETES: encimo caracter
+var miCadena = "JavaScript";
+console.log(miCadena[5]) // "S"
+console.log(miCadena[0]) // "J"
+console.log(miCadena[10]) //undefined
+
+//NOTACIÓN DE CORCHETES: ultimo carácter
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
