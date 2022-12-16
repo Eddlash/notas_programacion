@@ -82,7 +82,7 @@ producto = -5.7 * 3.4; // se puede multiplicar un numero decimal con un numero e
 //DIVIDIR NUMEROS DECIMALES
 var cociente = 5.0 / 2.0;
 //RESTO DE UNA DIVISIÓN
-var resto 15 % 5; /*el símbolo de porcentaje es el operador que nos
+var resto = 15 % 5; /*el símbolo de porcentaje es el operador que nos
 permite obtener el resto de la división*/
 
 //INCREMENTAR EL VALOR DE UNA VARIABLE
@@ -204,8 +204,21 @@ console.log(miCadena[0]) // "J"
 console.log(miCadena[10]) //undefined
 
 //NOTACIÓN DE CORCHETES: ultimo carácter
+var miCadena;
+miCadena = "JavaScript";
+console.log(miCadena[miCadena.lenght - 1]) //asi la consola nos mostrará la ultima letra de la cadena de caracteres.
 
+//NOTACIÓN DE CORCHETES: de derecha a izquierda 
+var miCadena;
+miCadena = "javascript";
+console.log(miCadena[miCadena.lenght - 2]) //podemos ir restando eo nimero de indices para llegsr a la letra que queremos dentro de la cadena de caracteres
 
+var miCadena;
+miCadena = "javascript";
+n = 4;
+console.log(miCadena[miCadena.lenght - n])
+
+//ARREGLOS (ARRAYS)
 
 
 
